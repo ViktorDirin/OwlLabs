@@ -4,28 +4,117 @@
 @import "libs.scss";
 @import "global";
 
-.header {
+.top__promo {
+  background-color: $accent;
+  padding: 8px 0;
+  &-text {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    text-align: center;
+  }
 }
-
-.main {
-  h1 {
-    &:nth-child(2) {
-      @extend %roboto-300;
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+  }
+  &__nav,
+  &__option {
+    display: flex;
+    &-item {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
     }
-    &:nth-child(3) {
-      @extend %roboto-400;
-    }
-    &:nth-child(4) {
-      @extend %roboto-500;
-    }
-    &:nth-child(5) {
-      @extend %roboto-700;
-    }
-    &:nth-child(6) {
-      @extend %roboto-900;
+  }
+  &__logo {
+    transform: translateX(50px);
+  }
+  &__option {
+    &-btn {
+      padding: 13px 41px;
+      border: 1px solid #000000;
+      border-radius: 25px;
+      &:hover {
+        box-shadow: 0 0 4px #000000;
+      }
     }
   }
 }
+
+// ----------------------------------- WELCOME -------------------------
+.welcome {
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(75, 80, 250, 1) 45%,
+    rgba(75, 80, 250, 1) 55%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 89px 0 100px;
+    // width: 100%;
+    // height: 676px;
+    background-image: url(../images/owl.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    &-title {
+      width: 620px;
+      @extend %roboto-900;
+      font-size: 155px;
+      line-height: 164px;
+    }
+    &-content {
+      width: 424px;
+      margin-right: 50px;
+      padding-bottom: 50px;
+    }
+    &-text {
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 40px;
+    }
+    &-btn {
+      display: inline-block;
+      padding: 12px 34px;
+      border-radius: 24px;
+      color: #ffffff;
+      background-color: #000000;
+      margin-bottom: 24px;
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      text-decoration: underline;
+      &-btn {
+        width: 22px;
+        height: 22px;
+        border: 1px solid #000000;
+        border-radius: 50%;
+        background-image: url(../images/icons/play.svg);
+        background-position: 7px;
+        background-repeat: no-repeat;
+        margin-right: 12px;
+      }
+      &:hover {
+        color: #ffffff;
+        .welcome__inner-link-btn {
+          border: 1px solid #ffffff;
+        }
+      }
+    }
+  }
+}
+// ----------------------------------- WELCOME END -------------------------
 
 // ----------------------------------- FOOTER -------------------------
 
