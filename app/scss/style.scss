@@ -116,6 +116,180 @@
 }
 // ----------------------------------- WELCOME END -------------------------
 
+// ----------------------------------- SEE IT ALL -------------------------
+.seeitall {
+  &__inner {
+    padding: 0 84px;
+    height: 784px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 130px 0 284px;
+    background-image: url(../images/seeitall.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  &__decor {
+    margin-bottom: 100px;
+  }
+}
+// ----------------------------------- SEE IT ALL END -------------------------
+
+// ----------------------------------- FOCUS -------------------------
+.focus {
+  background-image: url(../images/focus-bg.jpg);
+  &__inner {
+    padding: 130px 84px;
+    height: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__decor {
+    display: flex;
+    &-img {
+      width: 308px;
+      height: 442px;
+      &:first-child {
+        margin-right: 37px;
+      }
+    }
+  }
+}
+// ----------------------------------- FOCUS END -------------------------
+
+// ----------------------------------- CONNECT -------------------------
+.connect {
+  background-image: url(../images/connect-bg.png);
+  background-position: bottom right;
+  height: 900px;
+  &__inner {
+    display: flex;
+    padding-top: 56px;
+    padding-left: 84px;
+  }
+}
+// ----------------------------------- CONNECT END -------------------------
+
+// ----------------------------------- INCREDIBLE -------------------------
+.incredible {
+  background-color: #0a3232;
+  &__inner {
+    color: #ffffff;
+    padding: 140px 84px 128px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__block {
+    width: 552px;
+    padding-bottom: 64px;
+    border-bottom: 1px solid #ffffff;
+    &-title {
+      font-size: 64px;
+      line-height: 72px;
+      margin-bottom: 28px;
+    }
+    &-subtitle {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 38px;
+    }
+    &-btn {
+      padding: 13px 40px;
+      background-color: transparent;
+      border: 1px solid #ffffff;
+      border-radius: 24px;
+    }
+  }
+}
+// ----------------------------------- INCREDIBLE END -------------------------
+
+// ----------------------------------- WORKPLACE -------------------------
+.workplace {
+  &__inner {
+    padding: 127px 0 184px;
+  }
+  &-title {
+    width: 524px;
+    margin-bottom: 118px;
+    font-size: 48px;
+    line-height: 56px;
+  }
+  &__wraper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    &-text {
+      width: 282px;
+      padding: 0 12px;
+      margin-bottom: 30px;
+    }
+    &-author {
+      position: relative;
+      width: 282px;
+      padding: 0 12px;
+      @extend %roboto-700;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 16px;
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 11px;
+        height: 2px;
+        background-color: #000000;
+        left: 12px;
+        top: -10px;
+      }
+    }
+  }
+  &__card {
+    position: relative;
+    width: 282px;
+    height: 386px;
+    padding: 24px;
+    border: 2px solid #000000;
+    margin-bottom: 24px;
+    &--blue {
+      background-color: #a4c3d8;
+    }
+    &--swarm {
+      background-color: #d9a603;
+    }
+    &--rose {
+      background-color: #ffb480;
+    }
+    &--green {
+      background-color: #b3b97d;
+    }
+    &-title {
+      font-size: 31px;
+      line-height: 40px;
+      margin-bottom: 12px;
+    }
+    &-subtitle {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 13px;
+      height: 13px;
+      bottom: 24px;
+      right: 24px;
+      background-image: url(../images/icons/arrow.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+// ----------------------------------- WORKPLACE END -------------------------
+
 // ----------------------------------- FOOTER -------------------------
 
 .footer {
