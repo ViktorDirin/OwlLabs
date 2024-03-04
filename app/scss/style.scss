@@ -161,6 +161,7 @@
 .connect {
   background-image: url(../images/connect-bg.png);
   background-position: bottom right;
+  background-repeat: no-repeat;
   height: 900px;
   &__inner {
     display: flex;
@@ -281,7 +282,7 @@
       height: 13px;
       bottom: 24px;
       right: 24px;
-      background-image: url(../images/icons/arrow.svg);
+      background-image: url(../images/icons/arrow-black.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -289,6 +290,85 @@
   }
 }
 // ----------------------------------- WORKPLACE END -------------------------
+
+// ----------------------------------- HOOTS -------------------------
+.hoots {
+  background-color: #f5f5f5;
+  &__inner {
+    padding: 128px 0;
+    text-align: center;
+  }
+  &__title {
+    font-size: 48px;
+    line-height: 56px;
+    margin-bottom: 80px;
+  }
+  &__rewards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+// ----------------------------------- HOOTS END -------------------------
+
+// ----------------------------------- WFA -------------------------
+.wfa {
+  background-color: #f5f5f5;
+  &__inner {
+    padding: 128px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  &__irl {
+    &-link {
+      display: block;
+      width: 100%;
+      font-size: 15px;
+      line-height: 24px;
+      padding: 12px 0 14px;
+      text-align: center;
+      border: 1px solid #000000;
+      border-radius: 26px;
+      margin-top: 24px;
+    }
+    &-article {
+      display: flex;
+      flex-direction: column;
+      width: 358px;
+      padding: 72px 36px 32px;
+      color: #ffffff;
+      background-color: #0a3232;
+      &-title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 18px;
+      }
+      &-text {
+        margin-bottom: auto;
+      }
+      &-link {
+        position: relative;
+        width: 100%;
+        font-size: 14px;
+        text-transform: uppercase;
+        &::after {
+          position: absolute;
+          display: block;
+          content: "";
+          width: 13px;
+          height: 13px;
+          top: 0;
+          right: 0;
+          background-image: url(../images/icons/arrow-white.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
+// ----------------------------------- WFA END -------------------------
 
 // ----------------------------------- FOOTER -------------------------
 
