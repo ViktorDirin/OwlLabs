@@ -8,6 +8,55 @@
 
 /* Large Devices, Wide Screens  ----------------------------------------------- 1200 --------------------*/
 @media only screen and (max-width: 1200px) {
+  .focus {
+    &__inner {
+      padding: 30px;
+      height: auto;
+    }
+    &__decor {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 20px;
+      &-img {
+        width: 195px;
+        height: 280px;
+        &:not(:last-child) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .incredible {
+    &__inner {
+      padding: 40px 0;
+    }
+    &__block,
+    &__decor {
+      width: 48%;
+    }
+  }
+  .workplace {
+    &__inner {
+      padding: 40px 0;
+    }
+    &-title {
+      margin-bottom: 40px;
+    }
+    &__wraper {
+      flex-wrap: wrap;
+    }
+    &__item {
+      width: 50%;
+      margin-bottom: 30px;
+      &-text,
+      &-author {
+        margin: 0 auto 24px;
+      }
+    }
+    &__card {
+      margin: 0 auto 24px;
+    }
+  }
 }
 
 /* Medium Devices, Desktops  -------------------------- 1024 -----------------------------------------*/
@@ -16,18 +65,225 @@
 
 /* Medium Devices, Desktops ------------------------- 992 ---------------------------------------*/
 @media only screen and (max-width: 992px) {
+  .header {
+    &__inner {
+      flex-direction: column;
+      padding: 12px 0;
+    }
+    &__logo {
+      transform: none;
+      order: -1;
+    }
+    &__logo,
+    &__nav {
+      margin-bottom: 12px;
+    }
+    &__option {
+      &-item {
+        &:not(:last-child) {
+          margin-right: 24px;
+        }
+      }
+      &-btn {
+        padding: 2px 12px;
+      }
+      &-img {
+        display: inline-block;
+      }
+    }
+  }
+  .welcome {
+    &__inner {
+      flex-wrap: wrap;
+      padding: 40px 0 52px;
+      background-size: contain;
+      background-position: right;
+      &-title {
+        width: 100%;
+        font-size: 52px;
+        line-height: 56px;
+      }
+    }
+  }
+  .seeitall {
+    &__inner {
+      margin: 30px -15px 30px;
+      height: auto;
+    }
+    &__decor {
+      display: none;
+    }
+  }
+  .section {
+    &__block {
+      &-title {
+        font-size: 52px;
+        line-height: 56px;
+        text-shadow: 0 0 4px #ffffff;
+      }
+      &-subtitle {
+        text-shadow: 0 0 4px #ffffff;
+      }
+    }
+  }
+  .focus {
+    &__decor {
+      &-img {
+        width: 125px;
+        height: 180px;
+      }
+    }
+  }
+  .connect {
+    background-size: contain;
+    height: auto;
+    &__inner {
+      padding: 20px 20px;
+    }
+  }
+  .hoots {
+    &__inner {
+      padding: 40px 0;
+    }
+  }
+  .wfa {
+    &__inner {
+      padding: 40px 0;
+    }
+    &__irl {
+      &-article {
+        padding: 16px 12px;
+      }
+    }
+  }
+  .footer {
+    &::after {
+      display: none;
+    }
+    &__nav {
+      flex-wrap: wrap;
+    }
+    padding: 40px 0;
+    &__stay {
+      width: auto;
+      margin-bottom: 30px;
+    }
+    &__navblock {
+      width: auto;
+      &-list {
+        margin-right: 20px;
+      }
+    }
+    &__copyright {
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+      &-social {
+        margin-bottom: 10px;
+      }
+      &-info {
+        margin-top: 0;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets  ----------------------------------------------- 768 --------------------*/
 @media only screen and (max-width: 768px) {
+  .incredible__block {
+    width: 100%;
+  }
+  .incredible__decor {
+    display: none;
+  }
+  .workplace {
+    &__inner {
+      padding: 20px 0;
+    }
+    &-title {
+      width: auto;
+      margin-bottom: 20px;
+    }
+    &__card {
+      width: 152px;
+      height: 200px;
+      padding: 6px;
+      margin: 0 0 12px;
+      &-title {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 4px;
+      }
+      &-subtitle {
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 400;
+      }
+      &::after {
+        right: 6px;
+        bottom: 6px;
+      }
+    }
+    &__item {
+      &-text {
+        padding: 0 6px;
+        width: auto;
+        line-height: 18px;
+      }
+      &-author {
+        width: auto;
+        padding: 0 6px;
+        margin-bottom: 0;
+      }
+    }
+  }
+  .wfa {
+    &__inner {
+      flex-wrap: wrap;
+    }
+    &__irl {
+      &-article {
+        width: 100%;
+      }
+    }
+  }
 }
 
 /* Small Devices, Tablets ----------------------------------------------- 576 --------------------*/
 @media only screen and (max-width: 576px) {
+  .focus__decor {
+    display: none;
+  }
+  .hoots {
+    &__inner {
+      padding: 20px 0;
+    }
+    &__title {
+      margin-bottom: 20px;
+    }
+    &__rewards {
+      &-item {
+        margin: 0 6px;
+      }
+    }
+  }
 }
 
 /* Extra Small Devices, Phones ----------------------------------------------- 480 --------------------*/
 @media only screen and (max-width: 480px) {
+  .welcome__inner {
+    background-size: 34%;
+    background-position: right bottom 10px;
+  }
+  .seeitall__inner {
+    padding: 0 14px;
+  }
+  .focus__inner {
+    padding: 0;
+  }
+  .connect__inner {
+    padding: 20px 0;
+  }
 }
 
 /* Extra Small Devices, Phones ----------------------------------------------- 320 --------------------*/
